@@ -20,6 +20,5 @@ class Solution {
 		//Sum + The Last Character of the string as it's always needed to be added and not subtracted.
         
 	return sum+map.get(s.charAt(s.length()-1));
-        
-}
+    }
 }
