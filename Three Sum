@@ -28,7 +28,7 @@ class Solution {
                    
                    while(l<h && nums[l] == nums[l+1]) 
 		   l++ ;    
-                    
+                   
                    // In order to minimize the duplicate Triplet ex: [2 2 4 6 8 8 0 5 5 5 -4 3 3 3] it will keep on adjusting the pointer till these condition will fail.
                     
                    // nums[l] nums[h] should be unique every time for the fixed element nums[i] 
