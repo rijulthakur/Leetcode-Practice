@@ -1,4 +1,7 @@
-List<List<Integer>> triplets = new LinkedList<>() ;  //Not Counted as the Space Complexity part as this is the part of problem.
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+       List<List<Integer>> triplets = new LinkedList<>() ;  
+       //Not Counted as the Space Complexity part as this is the part of problem.
         
         Arrays.sort(nums) ;  //O(n log(n)) T.C.
         
@@ -45,3 +48,5 @@ List<List<Integer>> triplets = new LinkedList<>() ;  //Not Counted as the Space 
 	// O(n log(n)) + O( N * N) = O(n^2) --> time complexity.
 	// Constant Space Complexity. 
         return triplets ; 
+   }
+   }
