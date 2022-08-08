@@ -1,0 +1,47 @@
+List<List<Integer>> triplets = new LinkedList<>() ;  //Not Counted as the Space Complexity part as this is the part of problem.
+        
+        Arrays.sort(nums) ;  //O(n log(n)) T.C.
+        
+        
+        for(int i = 0 ; i< nums.length - 2 ; i++) {  // Atleast two elements should be ahead of the fixed element i.o.t. find triplets.  O(n) T.C.
+            
+           if( i == 0 || (i>0 && nums[i] != nums[i-1] )) {
+               //So that we can avoid the situation like [2 2 4 6 8 8 0 5 5 5 -4 3 3 3] to form duplicate triplets . 
+               
+               //Using the Two pointer Approch to get the Two-Sum.
+               
+               int l = i+1 , h = nums.length -1 ; // iterate from the next element till the last of the list
+               
+               int newTarget = 0 - nums[i] ;  // New Target = Original Target (here it 0.) - the fixed element
+            
+               // If we can find the **pair** such that whose sum is equal to the new target we fill get the required triplet.
+               
+            while(l < h) {     // O(n) T.C. 
+                
+                if(nums[l] + nums[h] == newTarget ) {
+                   
+                   //We got the Triplet. 
+                   
+				   triplets.add(Arrays.asList(nums[i] , nums[l] , nums[h])) ; //Adding along with the fixed element.      O(1) Insertion time in List.
+                   
+                   while(l<h && nums[l] == nums[l+1]) l++ ;    
+                    
+                   // In order to minimize the duplicate Triplet ex: [2 2 4 6 8 8 0 5 5 5 -4 3 3 3] it will keep on adjusting the  pointer till these condition will fail.
+                    
+                   // nums[l] nums[h] should be unique every time for the fixed element nums[i] 
+                   while(l<h && nums[h] == nums[h-1]) h-- ;
+                   
+                   l++ ; h-- ;   //Finally Adjusting the both Pointers so that it will check the next iteration
+                    
+               } else if (nums[l] + nums[h] < newTarget){
+                    l++ ;
+                }else {
+                    h-- ;
+                }
+            }  
+        }
+    }
+	
+	// O(n log(n)) + O( N * N) = O(n^2) --> time complexity.
+	// Constant Space Complexity. 
+        return triplets ; 
