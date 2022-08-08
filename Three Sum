@@ -14,7 +14,7 @@ class Solution {
                
                int l = i+1 , h = nums.length -1 ; // iterate from the next element till the last of the list
                
-               int newTarget = 0 - nums[i] ;  // New Target = Original Target (here it 0.) - the fixed element
+               int newTarget = 0 - nums[i] ;  // New Target = Original Target (here it is 0.) - the fixed element
             
                // If we can find the **pair** such that whose sum is equal to the new target we fill get the required triplet.
                
