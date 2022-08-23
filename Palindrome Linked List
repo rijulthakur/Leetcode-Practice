@@ -7,7 +7,7 @@ class Solution {
             temp = temp.next;
         }
         
-        while (head != null) {
+        while(head != null) {
             if (head.val != (int)stack.pop()) {
                 return false;
             }
