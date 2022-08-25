@@ -18,6 +18,6 @@ class Solution {
             freq[idx]--;
         }
         
-        return true;
+     return true;
     }
 }
