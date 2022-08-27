@@ -1,5 +1,5 @@
 int findMinimum(int arr[], int n, int k)
-{//int prize
+{
     int res = 0;
     for (int i = 0; i < n; i++) {
         // Buy current candy
