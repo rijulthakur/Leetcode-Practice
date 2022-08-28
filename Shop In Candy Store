@@ -5,8 +5,7 @@ int findMinimum(int arr[], int n, int k)
         // Buy current candy
         res += arr[i];
  
-        // And take k candies for free
-        // from the last
+        // And take k candies for free from the last
         n = n - k;
     }
     return res;
