@@ -7,6 +7,6 @@ class Solution {
                 return 0; 
             x=x/10;
         }
-        return (int)res;  
+        return (int)rev;  
     }
 }
