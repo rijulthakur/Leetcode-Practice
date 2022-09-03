@@ -9,13 +9,13 @@ public void push(int x){
 
 public int pop() {
 	return queue.remove();
-}
+ }
 
 public int top() {
 	return queue.peek();
-}
+ }
 
 public boolean empty() {
 	return queue.isEmpty();  
-}
+  }
 }
