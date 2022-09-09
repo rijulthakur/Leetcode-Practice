@@ -22,12 +22,12 @@ class Solution {
                  if((target<= nums[high]) && (target >= nums[mid])){
                     low = mid +1;
               }   
+             
              else{
                     high = mid -1;
                 }
             }
         }
-
         return -1;
     }
 }
