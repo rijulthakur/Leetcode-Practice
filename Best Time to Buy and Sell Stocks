@@ -6,12 +6,12 @@ class Solution {
 	
 	//if k >= n/2, then you can make maximum number of transactions.
 	if (k >=  n/2) {
-		int maxPro = 0;
+		int maxGain = 0;
 		for (int i = 1; i < n; i++) {
 			 if (prices[i] > prices[i-1])
-				maxPro += prices[i] - prices[i-1];
+				maxGain += prices[i] - prices[i-1];
 		}
-		return maxPro;
+		return maxGain;
 	}
 	
     int[][] dp = new int[k+1][n];
