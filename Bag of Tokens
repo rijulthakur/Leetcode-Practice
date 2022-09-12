@@ -7,9 +7,9 @@ class Solution {
         if(i > j) return points;
         int max = points;
         if(tokens[i] <= power)
-            max = Math.max(max, helper(tokens, i+1, j, power-tokens[i], points+1));
+            max = Math.max(max, check(tokens, i+1, j, power-tokens[i], points+1));
         else if(points >= 1)
-            max = Math.max(max, helper(tokens, i, j-1, power+tokens[j], points-1));
+            max = Math.max(max, check(tokens, i, j-1, power+tokens[j], points-1));
         return max;
     }
 }
