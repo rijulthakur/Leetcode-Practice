@@ -1,9 +1,9 @@
 class Solution {
     public int bagOfTokensScore(int[] tokens, int power) {
         Arrays.sort(tokens);
-        return helper(tokens, 0, tokens.length-1, power, 0);
+        return check(tokens, 0, tokens.length-1, power, 0);
     }
-    private int helper(int[] tokens, int i, int j, int power, int points){
+    private int check(int[] tokens, int i, int j, int power, int points){
         if(i > j) return points;
         int max = points;
         if(tokens[i] <= power)
