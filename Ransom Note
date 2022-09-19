@@ -4,7 +4,7 @@ class Solution {
         int r = ransomNote.length();
         
         int[] freq = new int[26];
-        for (int i = 0; i < m; i++) {
+        for(int i = 0; i < m; i++) {
             char c = magazine.charAt(i);
             int idx = c - 'a';
             freq[idx]++;
