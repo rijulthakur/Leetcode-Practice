@@ -11,7 +11,7 @@ class Solution {
             
         //iterate until the number becomes zero, NO NEED to go until the last element in roman array
 	
-	while (num >0) {
+	while(num >0) {
 		while (num >= values[i]) {
 			num -= values[i];
 			result.append(roman[i]);
