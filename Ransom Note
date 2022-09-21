@@ -8,7 +8,6 @@ class Solution {
             int idx = c - 'a';
             freq[idx]++;
         }
-        
         for(int i=0; i<r; i++) {
             char c = ransomNote.charAt(i);
             int idx = c - 'a';
