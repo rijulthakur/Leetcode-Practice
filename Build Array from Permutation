@@ -16,6 +16,6 @@ class Solution {
             nums[i] = nums[i]/n;
         }
         
-        return nums;
+       return nums;
     }
 }
