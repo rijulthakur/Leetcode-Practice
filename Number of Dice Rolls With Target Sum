@@ -1,0 +1,20 @@
+class Solution {
+    public int numRollsToTarget(int n, int k, int target) {
+       int MOD = 1000000007;
+        int[][] dp = new int[n + 1][target + 1]; 
+        dp[0][0] = 1;
+		//how many possibility can i dices sum up to j;
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j<= target; j++) {
+                if(j > i * k) {
+                   continue;         //If j is larger than largest possible sum of i dices, there is no possible ways.        
+                } else {                      //watch out below condition, or NPE
+                    for(int l = 1; l <= k && l <= j ; l++) {
+                        dp[i][j] = (dp[i][j] + dp[i - 1][j - l]) % MOD; 
+                    }
+                }
+            }
+        }
+        return dp[n][target]; 
+    }
+}
