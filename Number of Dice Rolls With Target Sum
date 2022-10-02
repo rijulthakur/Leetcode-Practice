@@ -9,7 +9,7 @@ class Solution {
             for(int j = 1; j<= target; j++) {
                 if(j > i * k) {
                    continue;         //If j is larger than largest possible sum of i dices, there is no possible ways.        
-                } else {                      //watch out below condition, or NPE
+                } else {             //watch out below condition, or NPE
                     for(int l = 1; l <= k && l <= j ; l++) {
                         dp[i][j] = (dp[i][j] + dp[i - 1][j - l]) % MOD; 
                     }
