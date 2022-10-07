@@ -1,5 +1,4 @@
 public class TimeMap {
-
     private Map<String,TreeMap<Integer,String>> map;
 
     /** Initialize your data structure here. */
