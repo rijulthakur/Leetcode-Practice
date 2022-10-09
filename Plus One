@@ -1,7 +1,7 @@
 class Solution {
     public int[] plusOne(int[] digits) {
     int len = digits.length;
-       if(len == 0) {
+       if(len==0) {
             return new int[]{1};
         }
 
