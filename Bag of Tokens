@@ -3,6 +3,7 @@ class Solution {
         Arrays.sort(tokens);
         return check(tokens, 0, tokens.length-1, power, 0);
     }
+    
     private int check(int[] tokens, int i, int j, int power, int points){
         if(i > j) 
         return points;
