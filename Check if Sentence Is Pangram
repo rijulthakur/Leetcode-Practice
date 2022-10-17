@@ -1,0 +1,10 @@
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        int check = 0;
+        for(char c : sentence.toCharArray()) {
+            int x = c - 'a';
+            check = check | (1 << x);
+        }
+        return check == ((1 << 26) - 1);
+    }
+}
