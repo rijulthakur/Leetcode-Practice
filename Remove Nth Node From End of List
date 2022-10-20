@@ -3,7 +3,10 @@ class Solution {
         ListNode front = head, back = head;
         while(n-- > 0) 
         front = front.next;
-        if(front == null) return head.next;
+        
+        if(front == null) 
+        return head.next;
+        
         while(front.next != null){
             front = front.next;
             back = back.next;
