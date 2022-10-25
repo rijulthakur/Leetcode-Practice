@@ -8,7 +8,7 @@ class Solution {
                 idx1 = 0;
                 arrIdx1++;
             } else idx1++;
-            if (idx2 == word2[arrIdx2].length() - 1) {
+            if(idx2 == word2[arrIdx2].length() - 1) {
                 idx2 = 0;
                 arrIdx2++;
             } else idx2++;
