@@ -4,7 +4,7 @@ class Solution {
         while(arrIdx1 < word1.length && arrIdx2 < word2.length) {
             if(word1[arrIdx1].charAt(idx1) != word2[arrIdx2].charAt(idx2)) 
               return false;
-            if (idx1 == word1[arrIdx1].length() - 1) {
+            if(idx1 == word1[arrIdx1].length() - 1) {
                 idx1 = 0;
                 arrIdx1++;
             } else idx1++;
