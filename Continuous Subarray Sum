@@ -7,7 +7,7 @@ class Solution {
         if(k!=0) 
         runningSum %= k; 
         Integer prev = map.get(runningSum);
-        if(prev != null) {
+        if(prev!=null) {
             if (i - prev > 1) return true;
         }
         else map.put(runningSum, i);
