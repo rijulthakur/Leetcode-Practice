@@ -8,7 +8,7 @@ class Solution {
         runningSum %= k; 
         Integer prev = map.get(runningSum);
         if(prev!=null) {
-            if (i - prev > 1) return true;
+            if (i-prev > 1) return true;
         }
         else map.put(runningSum, i);
     }
