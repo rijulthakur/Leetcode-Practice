@@ -1,6 +1,6 @@
 class Solution {
     public int maxArea(int[] height) {
-        int a=0, b=height.length-1, max=0;
+     int a=0, b=height.length-1, max=0;
      while(a<b){
             int area=Math.min(height[a], height[b]) * (b-a);
             max=Math.max(max, area);
