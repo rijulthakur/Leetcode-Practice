@@ -3,7 +3,7 @@ class Solution {
         ListNode create = new ListNode(0);
         ListNode tail = create;
 
-	   while(list1 != null && list2 != null) {
+	 while(list1 != null && list2 != null) {
 			if (list1.val <= list2.val) {
 				tail.next = list1;
 				list1 = list1.next;
