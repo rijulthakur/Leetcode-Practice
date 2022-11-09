@@ -9,7 +9,6 @@ class StockSpanner {
     //Returns the span of the stock's price 
         
         int span = 1;
-        
         while(st.size() > 0 && price >= st.peek()[0]){
             span += st.pop()[1];
         }
