@@ -6,6 +6,7 @@ class StockSpanner {
     }
     
     public int next(int price) {
+    //Returns the span of the stock's price 
         
         int span = 1;
         
