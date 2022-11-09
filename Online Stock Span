@@ -1,5 +1,4 @@
 class StockSpanner {
-    
     Stack<int[]> st;
     
     public StockSpanner() {
