@@ -5,7 +5,7 @@ class MedianFinder {
     public void addNum(int num) {
         large.add((long) num);
         small.add(-large.poll());
-        if (large.size() < small.size())
+        if(large.size() < small.size())
             large.add(-small.poll());
     }
 
