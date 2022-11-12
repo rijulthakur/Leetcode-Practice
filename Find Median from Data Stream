@@ -1,6 +1,5 @@
 class MedianFinder {
-
-    private Queue<Long> small = new PriorityQueue(),
+private Queue<Long> small = new PriorityQueue(),
                         large = new PriorityQueue();
 
     public void addNum(int num) {
