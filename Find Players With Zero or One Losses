@@ -9,7 +9,7 @@ class Solution {
         
         List<Integer> allWin = new ArrayList<>();
         List<Integer> allWinExceptOne = new ArrayList<>();
-        for (Integer key: map.keySet()) {
+        for(Integer key: map.keySet()) {
             int value = map.get(key);
             
             if(value == 0) {
