@@ -18,7 +18,7 @@ class Solution
             }
         }
         if(min > pre[N-1]/N) // Taking all on the first/left
-            return N-1;
+           return N-1;
         return id;
     }
 }
