@@ -7,7 +7,8 @@ class Solution {
         ListNode oddIt = oddHead;
         ListNode evenHead = new ListNode(0);
         ListNode evenIt = evenHead;    
-        while (head != null) {
+        
+        while(head != null) {
             oddIt.next = head;
             evenIt.next = head.next;
             oddIt = oddIt.next;
