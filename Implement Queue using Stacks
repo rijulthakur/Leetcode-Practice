@@ -1,5 +1,4 @@
 class MyQueue {
-
     Stack<Integer> st1 = new Stack<>();
     Stack<Integer> st2 = new Stack<>();
     public MyQueue() {
