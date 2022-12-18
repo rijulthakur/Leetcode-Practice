@@ -3,7 +3,7 @@ class Solution {
         int[] res = new int[temp.length];
         for (int i = temp.length - 2; i >= 0; i--) {
             int next = i + 1;
-            while (next < temp.length && temp[next] <= temp[i]) {
+            while(next < temp.length && temp[next] <= temp[i]) {
                 if (res[next] == 0) {
                     next = temp.length;
                     break;
