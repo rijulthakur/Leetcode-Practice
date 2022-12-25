@@ -13,6 +13,7 @@ class Solution {
                     ans[i]=j;
                     break;
                 }
+                
                 if(j==nums.length-1 && sum<=queries[i])
                     ans[i]=j+1;
             }
