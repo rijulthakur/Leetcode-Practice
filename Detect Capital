@@ -4,7 +4,8 @@ class Solution {
         
         if(Character.isUpperCase(word.charAt(0))){
             boolean isFirstCharacter = Character.isUpperCase(word.charAt(1));
-            for(int i = 2; i < word.length(); i++){
+            
+           for(int i = 2; i < word.length(); i++){
                 boolean currentCharState = Character.isUpperCase(word.charAt(i));
                 if(currentCharState != isFirstCharacter) return false;
             }
