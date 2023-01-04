@@ -1,6 +1,7 @@
 class Solution {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-      if(rooms.size() == 0) return true;
+        if(rooms.size() == 0) 
+            return true;
         boolean[] visited = new boolean[rooms.size()];
         dfs(0,rooms,visited);
         for(int i=0;i<rooms.size();i++)
