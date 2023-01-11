@@ -1,6 +1,7 @@
 class Solution {
     public int minDeletionSize(String[] strs) {
-      if(strs == null || strs.length == 0) return 0;
+      if(strs == null || strs.length == 0) 
+       return 0;
         int deletions = 0;
         for(int column = 0; column < strs[0].length(); column++){
             char character = strs[0].charAt(column);
