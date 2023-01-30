@@ -1,0 +1,14 @@
+class Solution:
+    def tribonacci(self, n: int) -> int:
+
+        Tn = (0, 1, 1,  2, 4, 7)                        #  Example:   n = 11
+        if n < 6: return Tn[n]                              
+
+        r = n%3                                         #   r  = 11%3 = 2
+
+        a, b, c = Tn[r+1],Tn[r+2],Tn[r+3]               #        a           b            c
+                                                        #   ––––––––––  ––––––––––  ––––––––––    
+        for _ in range(r+7,n,3):                        #   Tn[3] =  2  Tn[4] =  4  Tn[4] =  7
+            a, b, c = a+b+c, a+2*b+2*c, 2*a+3*b+4*c     #   Tn[6] = 13  Tn[7] = 24  Tn[8] = 44       
+                                                        #   
+        return 2*a+3*b+4*c
